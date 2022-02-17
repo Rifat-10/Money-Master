@@ -10,10 +10,10 @@
 </head>
 <body>
     <div class=" text-center title">
-        <h1>Monthly Expenses</h1>
+        <h1 class="my-3">Monthly Expenses</h1>
     </div>
     
-    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-2 justify-content-between w-100 p-3 ">
+    <section class="row  justify-content-between w-100 p-3 ">
         <div class="col-4">
             <img src="image/image3.gif" alt="">
         </div>
@@ -34,7 +34,7 @@
                     <p class="text-end pe-5 me-5">
                        <span>Clothes:</span>  <input id="clothes" type="text"></p>
 
-                       <p class="text-danger fw-bold" style="display:none" id="error" >Your expense can not be more then your income,</p>
+                       <p class="text-danger fw-bold" style="display:none" id="error" >Your expense can not be more then your income,Please check it!</p>
 
                     <button class="button11" id="calculate">Calculate</button>
                     
@@ -42,7 +42,7 @@
 
                     <p class="fw-bold">Balance: <span  id="balance">0</span> </p>
 
-                    <p class="text-danger fw-bold" style="display:none" id="errorrr" >Your expense can not be more then your income,</p> 
+                    <p class="text-danger fw-bold" style="display:none" id="errorrr" >Your can't saving,Please try again!</p> 
                     <p>Save: <input id="save" type="text">  %  <button class="button2" id="buttonSave">Save</button></p>
 
                     <p class="fw-bold" >Saving Amount: <span id="saving-amount">0</span></p>
