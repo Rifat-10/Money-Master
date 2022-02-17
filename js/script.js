@@ -38,35 +38,28 @@ function mainBalance(){
     const mainBalance = parseFloat(income())-parseFloat(totalExpenses());
     return mainBalance;
 }
-// const error = errorChecking(incomeValue, foodCostValue, rentCostValue, clothesCostValue);
-
-// function errorChecking() {
-//      for (const value of arguments) {
-//           if (isNaN(value) == true) {
-//               return true; 
-//             }
-//              else if (value < 0) {
-//                   return true;
-//                  } 
-//                  else {
-//                       return false;
-//                      }
-//                      }}
 
 
-document.getElementById('button').addEventListener('click',function(){
+document.getElementById('calculate').addEventListener('click',function(){
 
     
 
     const totalExpensesField = document.getElementById('total-expenses');
 
     let expens= totalExpenses();
+    if(expens<0){
+        const erroR = document.getElementById('error');
+        erroR.style.display="block";
+    }
+
     let inco= income();
     console.log(inco);
     if(inco<0){
         const erroR = document.getElementById('error');
         erroR.style.display="block";
     }
+
+    
 
     if(parseFloat(expens)> parseFloat(inco)){
         console.log(expens, inco);
@@ -84,7 +77,7 @@ document.getElementById('button').addEventListener('click',function(){
        
     }
    
-    
+
 });
 
 
