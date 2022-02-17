@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&family=Lobster&display=swap');
+
+.title{
+    font-family: 'Lobster', cursive;
+}
+.font{
+    font-family: 'Hahmlet', serif;
+}
+
+/* .containar{
+display: flex;
+margin: 20px 50px;
+}
+
+.field{
+    margin-left: 180px;
+} */

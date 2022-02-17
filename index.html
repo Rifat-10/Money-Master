@@ -6,11 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monthly Expenses</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
+    <div class=" text-center title">
+        <h1>Monthly Expenses</h1>
+    </div>
     
+    <section class="row justify-content-between w-100 p-3 ">
+        <div class="col-4">
+            <img src="image/image3.gif" alt="">
+        </div>
+        <div class="col-4 bg-light text-center font">
+            <div class="mt-5">
+
+                 <h3>Income</h3>
+                <form action="">
+                    <p>Income: <input id="total-income" type="value"></p>
+                </form> 
+                <h3 class="pt-3">Expenses</h3>
+                <form action="">
+                    <p>Food: <input id="food" type="value"></p>
+                    <p>Rent: <input id="rent" type="value"></p>
+                    <p>Clothes: <input id="clothes" type="value"></p>
+                    <button class="button1">Calculate</button>
+                    
+                    <p class="fw-bold pt-4" id="total-expenses">Total Expenses: 0</p>
+                    <p class="fw-bold" id="balance">Balance: 0</p>
+                    <p>Save: <input type="value">  %  <button class="button2">Save</button></p>
+
+                    <p class="fw-bold" id="saving-amount">Saving Amount: 0</p>
+                    <p class="fw-bold" id="remaining-balance">Remaining Balance: 0</p>
+
+                </form>
+
+            </div>
+           
+        </div>
+    </section>
 
 
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
